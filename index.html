@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-campominato-grid</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- 
+        
+    L'utente clicca su un bottone che genererà una griglia di gioco quadrata.
+    Ogni cella ha un numero progressivo, da 1 a 100.
+    Ci saranno quindi 10 caselle per ognuna delle 10 righe.
+    Quando l'utente clicca su ogni cella, la cella cliccata si colora di azzurro ed emetto un messaggio in console con il numero della cella cliccata.
+
+    1.devo creare un evento al click
+     - di cui dopo che clicca play apparira la griglia 
+    2. devo duplicare il div creato con nome griglia per 100 caselle
+     -all'iterno dei div dovrò servirmi di createElement() per creare uno span.
+     -all'iterno dello span dovro inserire i numeri da 1 a 100 
+    3.ogni cella a un numero progressivo da 1 a 100 
+    4.devo utilizzare active in modo che l'utente dopo che clicca in una casella si colora di azzuro 
+    5.una volta cliccata la casella devo stampare in console il numero della cella cliccata 
+
+    -->
+
+
+    <head>
+        <div class="container-header">
+            <div class="row1-header">
+                <figure>
+                    <img src="./assets/img/logo.png" alt="logo">
+                </figure>
+
+                <h1>campo minato</h1>
+            </div>
+
+            <div class="row2-header">
+                <input type="button" value="play" name="button" id="bottone">
+            </div>
+        </div>
+    </head>
+
+
+    <main>
+        <div class="container-main">
+            <div id="griglia" class="active deactivate">
+
+                <!-- <div id="casella"  class="active deactivate" >
+                </div> -->
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container-footer">
+            <div class="row1-footer">
+                <h4>made with by &#x2764
+                    <a href="">boolean</a>
+                </h4>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
