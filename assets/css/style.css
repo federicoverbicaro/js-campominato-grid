@@ -41,6 +41,8 @@
     height: 100vh;
     background-color:rgb(127,255,212) ;
     display: flex;
+    align-items: center;
+    
     
 }
 .active{
@@ -51,21 +53,22 @@
 }
 
 #griglia{
-    /* width: 100%; */
+    width: 60%;
     margin: 0 auto ;
     display: flex;
     border: 1px solid black;
-    justify-content: center;
-    align-items: center;
     flex-wrap:wrap;
     
 }
 
-#casella{
+.cubo{
     aspect-ratio: 1/1;
     width: 100%;
-    border: 2px solid black;
+    border: 1px solid black;
     flex-basis: calc(100% / 10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 

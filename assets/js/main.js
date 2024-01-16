@@ -9,14 +9,19 @@ buttonHtml.addEventListener('click',function(){
     casellaHtml.classList.remove("deactivate")
     casellaHtml.classList.add("active")
 
-
-    for(let i = 0; i <= 99; i++){
-        let casellaHtml =  document.createElement("div")
-        casellaHtml.id = "casella" 
-        grigliHtml.appendChild(casellaHtml)
-     
-     }            
+         
 })
 
 
+for(let i = 1; i <= 100; i++){
+
+    let casellaHtml =  document.createElement("div")
+
+    casellaHtml.classList = ("cubo") 
+ 
+    casellaHtml.innerText = i
+
+    grigliHtml.appendChild(casellaHtml)
+    
+ }   
                                            
