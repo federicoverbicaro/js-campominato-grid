@@ -1,6 +1,6 @@
 const buttonHtml = document.getElementById("bottone")
 const grigliHtml = document.getElementById("griglia")
-const casellaHtml = document.getElementById("casella")
+let casellaHtml = document.getElementById("casella")
 
 buttonHtml.addEventListener('click',function(){
     grigliHtml.classList.remove("deactivate")
@@ -8,9 +8,15 @@ buttonHtml.addEventListener('click',function(){
 
     casellaHtml.classList.remove("deactivate")
     casellaHtml.classList.add("active")
+
+
+    for(let i = 0; i <= 99; i++){
+        let casellaHtml =  document.createElement("div")
+        casellaHtml.id = "casella" 
+        grigliHtml.appendChild(casellaHtml)
+     
+     }            
 })
 
 
-// for(let i = 1; i < 100; i++){
-//     casellaHtml.innerHTML
-// }
+                                           

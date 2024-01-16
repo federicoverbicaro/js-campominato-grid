@@ -41,8 +41,7 @@
     height: 100vh;
     background-color:rgb(127,255,212) ;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
 }
 .active{
     display:block;
@@ -52,18 +51,21 @@
 }
 
 #griglia{
-    width: 60%;
+    /* width: 100%; */
     margin: 0 auto ;
     display: flex;
     border: 1px solid black;
+    justify-content: center;
+    align-items: center;
     flex-wrap:wrap;
-    flex-basis: calc(100% / 10);
+    
 }
 
 #casella{
     aspect-ratio: 1/1;
-    width: 10%;
+    width: 100%;
     border: 2px solid black;
+    flex-basis: calc(100% / 10);
 
 }
 
