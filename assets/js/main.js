@@ -2,12 +2,11 @@ const buttonHtml = document.getElementById("bottone")
 const grigliHtml = document.getElementById("griglia")
 let casellaHtml = document.getElementById("casella")
 
+
+
 buttonHtml.addEventListener('click',function(){
     grigliHtml.classList.remove("deactivate")
     grigliHtml.classList.add("active")
-
-    casellaHtml.classList.remove("deactivate")
-    casellaHtml.classList.add("active")
 
          
 })
@@ -16,12 +15,17 @@ buttonHtml.addEventListener('click',function(){
 for(let i = 1; i <= 100; i++){
 
     let casellaHtml =  document.createElement("div")
-
     casellaHtml.classList = ("cubo") 
- 
-    casellaHtml.innerText = i
+    casellaHtml.innerHTML = `<span>${i}</span>`
+
+    casellaHtml.addEventListener('click',function(){
+        this.classList.add("coloreUnico")
+        console.log("hai cliccato sulla casella" + " " + this.innerText)
+    })
+
 
     grigliHtml.appendChild(casellaHtml)
-    
+
  }   
-                                           
+ 
+
